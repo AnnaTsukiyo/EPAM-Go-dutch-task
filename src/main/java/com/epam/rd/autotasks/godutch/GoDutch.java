@@ -13,7 +13,7 @@ public class GoDutch {
             System.out.println("Bill total amount cannot be negative");
         } else if (friendsAmountTotal <= 0) {
             System.out.println("Number of friends cannot be negative or zero");
-        } else if (billTotal < friendsAmountTotal) {
+        } else if (billTotal < friendsAmountTotal &&billTotal!=0) {
             System.out.println(1);
         } else {
             int amountPerPerson = billTotal / friendsAmountTotal;
